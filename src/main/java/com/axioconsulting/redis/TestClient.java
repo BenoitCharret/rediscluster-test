@@ -8,7 +8,7 @@ import redis.clients.jedis.Jedis;
 public class TestClient {
 
 		public static void main(String[] args) {
-				Jedis jedis=new Jedis("localhost",7000);
+				Jedis jedis=new Jedis("localhost",7005);
 				jedis.connect();
 				jedis.set("toto","bar");
 				String value=jedis.get("toto");
